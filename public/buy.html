@@ -1,0 +1,11 @@
+<br>
+<br>
+<h1>Products Purchased</h1>
+<div ng-init="init()">
+<p class="cartP" ng-show="checkLocal()">No product Purchased</p>
+<table ng-hide="checkLocal()">
+    <tr ng-repeat="i in purchasedData">
+        <td>Product:<p style="font-weight: bold">{{i.proname}}</p></td><td><img ng-src="{{i.proimage}}"></td><td>
+    </tr>
+</table>
+</div>

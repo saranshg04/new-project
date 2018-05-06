@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+  <link rel="stylesheet" href="css/divs.css">
+   <script src="libs/angular.min.js"></script>
+   <script src="libs/angular-route.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+    <script src="directives/SpeechRecognitionDirective.js"></script>
+    <script src="models/fact.js"></script>
+    <script src="models/cartFact.js"></script>
+    <script src="models/buyFact.js"></script>
+    <script src="models/country.js"></script>
+    <script src="models/mobilefactory.js"></script>
+    <script src="models/laptopfactory.js"></script>
+    <script src="models/tabletfactory.js"></script>
+    <script src="models/loginFact.js"></script>
+    <script src="controller/cartcontroller.js"></script>
+    <script src="controller/buycontroller.js"></script>
+    <script src="controller/mobilecontroller.js"></script>
+    <script src="controller/laptopcontroller.js"></script>
+    <script src="controller/tabletcontroller.js"></script>
+    <script src="sparoutes.js"></script>
+    <meta charset="UTF-8">
+    <title>ecommerce</title>
+    <head-Tag></head-Tag>
+</head>
+<body>
+   <nav-Menu></nav-Menu>
+    <div style="background-image: url('images/image.jpg');background-size:100% 100%">
+        <ng-view></ng-view>
+    </div>
+</body>
+</html>
