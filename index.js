@@ -114,7 +114,7 @@ app.post('/showbuy',function(req,res){
     
 })
 
-
-app.listen(1234,function(){
-    console.log("Server started on port 1234");
-})
+var port= process.env.PORT || 5000;
+app.listen(port, function() {
+    console.log('Our app is running on http://localhost:' + port);
+});
